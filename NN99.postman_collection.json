@@ -81,7 +81,7 @@
 					}
 				},
 				"url": {
-					"raw": "http://localhost:8080/companies/Microsoft?timeSeries=weekly",
+					"raw": "http://localhost:8080/companies/Microsoft?timeSeries=daily",
 					"protocol": "http",
 					"host": [
 						"localhost"
@@ -94,7 +94,7 @@
 					"query": [
 						{
 							"key": "timeSeries",
-							"value": "weekly"
+							"value": "daily"
 						}
 					]
 				}
@@ -119,7 +119,7 @@
 					}
 				},
 				"url": {
-					"raw": "http://localhost:8080/companies/Microsoft?timeSeries=weekly",
+					"raw": "http://localhost:8080/companies/Microsoft?timeSeries=hourly",
 					"protocol": "http",
 					"host": [
 						"localhost"
@@ -132,7 +132,7 @@
 					"query": [
 						{
 							"key": "timeSeries",
-							"value": "weekly"
+							"value": "hourly"
 						}
 					]
 				}
