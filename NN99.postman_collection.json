@@ -1,0 +1,219 @@
+{
+	"info": {
+		"_postman_id": "623db8ac-10b8-497a-9c7f-f81ffc964c60",
+		"name": "NN99",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "18203486"
+	},
+	"item": [
+		{
+			"name": "List companies",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/companies",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"companies"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Info company weekly",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/companies/Microsoft?timeSeries=weekly",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"companies",
+						"Microsoft"
+					],
+					"query": [
+						{
+							"key": "timeSeries",
+							"value": "weekly"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Info company daily",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/companies/Microsoft?timeSeries=weekly",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"companies",
+						"Microsoft"
+					],
+					"query": [
+						{
+							"key": "timeSeries",
+							"value": "weekly"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Info company hourly",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/companies/Microsoft?timeSeries=weekly",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"companies",
+						"Microsoft"
+					],
+					"query": [
+						{
+							"key": "timeSeries",
+							"value": "weekly"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Invalid timesieries - 400",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/companies/Microsoft?timeSeries=monthly",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"companies",
+						"Microsoft"
+					],
+					"query": [
+						{
+							"key": "timeSeries",
+							"value": "monthly"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Non existing company - 404",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/companies/Twitter?timeSeries=weekly",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"companies",
+						"Twitter"
+					],
+					"query": [
+						{
+							"key": "timeSeries",
+							"value": "weekly"
+						}
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
