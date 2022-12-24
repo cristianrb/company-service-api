@@ -15,7 +15,10 @@ GET /companies/{companyName}?timeSeries=time -> will return the prices for a giv
 `./gradlew bootRun`
 
 ## How to run with docker
-`docker compose up -d`
+```
+./gradlew clean build
+docker compose up -d
+```
 
 ## Postman collection
 In the root you will be able to find the Postman collection with name: `NN99.postman_collection` that will allow you to easily test the API when running locally.
