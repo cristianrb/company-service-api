@@ -45,6 +45,7 @@ class TimeSeriesServiceImpl: TimeSeriesService {
             previousKey = entry.key
         }
 
+        // Compute last pending values
         if (timeSeries == "weekly") {
             previousKey = previousKey!!.with(TemporalAdjusters.previous(DayOfWeek.MONDAY))
         }
